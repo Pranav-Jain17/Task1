@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans Regular', sans-serif;
+
+}
+
+/* CSS for Notification bar */
+.notification_bar {
+    background-color: rgb(210, 216, 221);
+    padding: 5px 5rem 5px 5rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notify_shop {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+/* CSS for Navigation bar */
+.nav_logo {
+    font-size: 20px;
+}
+
+.navbar {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5rem 10px 5rem;
+}
+
+.nav_container a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(175, 174, 173);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav_icons {
+    text-align: end;
+}
+
+.nav_icons svg {
+    padding: 3px;
+}
