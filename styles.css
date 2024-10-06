@@ -52,3 +52,102 @@ a:hover {
 .nav_icons svg {
     padding: 3px;
 }
+
+
+/* CSS for Slider Section */
+.slider {
+    padding: 0px 5rem 0px 5rem;
+}
+
+#slider_img {
+    width: 100%;
+}
+
+.slider_text {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider_text1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.slider_text2 {
+    font-size: 13px;
+    color: rgb(152, 151, 151);
+    padding-right: 5rem;
+}
+
+
+/* CSS for banner grid */
+
+.banner_grid {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.banner_col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.living_room {
+    height: 100vh;
+    width: 50vw;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bedroom {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kitchen {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner_title {
+    font-size: 25px;
+    margin: 0%;
+}
+
+.banner_shop {
+    padding-top: 20px;
+    color: black;
+}
+
+.banner_text_living {
+    padding: 50px 0px 0px 50px;
+}
+
+.banner_text {
+    padding-top: 13rem;
+}
+
+.banner_img {
+    padding-top: 40px;
+}
+
+
+
+/* CSS for product carousel */
+.product_carousel {
+    padding: 20px 5rem 0px 5rem;
+
+}
