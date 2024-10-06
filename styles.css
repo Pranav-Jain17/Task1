@@ -151,3 +151,70 @@ a:hover {
     padding: 20px 5rem 0px 5rem;
 
 }
+
+
+/* CSS for values-section */
+.value_section {
+    padding: 20px 5rem 0px 5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.values {
+    background-color: rgb(224, 224, 229);
+    width: 25%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.value_t2 {
+    color: rgb(142, 142, 142);
+    font-size: 13px;
+}
+
+
+
+/* CSS for banner-section */
+.banner2 {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.banner2_text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: rgb(224, 224, 229);
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+.banner2_text1 {
+    color: blue;
+    font-size: 13px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.banner2_text2 {
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.banner2_text3 {
+    font-size: 13px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.banner2_shop {
+    padding-top: 20px;
+    display: flex;
+    color: black;
+}
