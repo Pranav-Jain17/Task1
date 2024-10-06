@@ -303,3 +303,50 @@ a:hover {
     align-items: center;
     color: gray;
 }
+
+
+
+/* CSS for footer */
+.footer {
+    color: white;
+    padding-top: 60px;
+    background-color: black;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.f1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.f2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0 50px 0;
+}
+
+.f11 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.f12 {
+    display: flex;
+    gap: 20px;
+}
+
+.f21 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.f22 {
+    display: flex;
+    gap: 20px;
+}
