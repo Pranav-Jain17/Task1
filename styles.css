@@ -163,6 +163,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    overflow-x: auto;
 }
 
 .new_each_image {
