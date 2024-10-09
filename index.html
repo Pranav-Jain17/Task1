@@ -6,38 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
 
+    <!-- HTML for notification_bar -->
+
     <nav class="notification_bar">
-        <div class="notify_text">30% off storewide - Limited time!</div>
-        <div class="notify_shop"><a href="#"> Shop Now</a></div>
-        <div class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="purple" class="bi bi-arrow-right"
-                viewBox="0 0 16 16">
+        <div></div>
+        <div class="notification_text">
+            <img style="padding-right:5px ;" src="./images/Vector.png" alt="Notify Vector">
+            <div class="notify_text">30% off storewide - Limited time!</div>
+            <div class="notify_shop"><a href="#"> Shop Now</a></div>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="purple"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
             </svg>
         </div>
-        <!-- <div class="cross">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+        <div class="cross">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
                 viewBox="0 0 16 16">
                 <path
                     d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
             </svg>
-        </div> -->
+        </div>
     </nav>
 
+
+    <!-- HTML for navigation bar -->
+
     <nav class="navbar">
-        <div class="nav_logo"><b>3legant.</b></div>
-        <div class="nav_container">
+        <div class="navbar_logo"><b>3legant.</b></div>
+        <div class="navbar_container">
             <a href="#" style="color: black; text-decoration: underline;"><b>Home</b></a>
             <a href="#">Shop</a>
             <a href="#">Product</a>
             <a href="#">Contact Us</a>
         </div>
-        <div class="nav_icons">
+        <div class="navbar_icons">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                 viewBox="0 0 16 16">
                 <path
@@ -64,13 +72,28 @@
     </nav>
 
 
-    <div class="slider">
-        <div>
-            <img id="slider_img" src="./images/Slider_Section.jpg" alt="Slider Image">
+    <!-- HTML for slider section -->
+
+    <div class="slider_section">
+        <div class="slider_images">
+            <div>
+                <img class="slider_img" src="./images/sliderImg1.jpeg" alt="Slider Image">
+            </div>
+            <div>
+                <img class="slider_img" src="./images/sliderImg2.jpeg" alt="Slider Image">
+            </div>
+            <div>
+                <img class="slider_img" src="./images/sliderImg3.jpeg" alt="Slider Image">
+            </div>
+            <div>
+                <img class="slider_img" src="./images/sliderImg4.jpeg" alt="Slider Image">
+            </div>
         </div>
         <div class="slider_text">
             <div class="slider_text1">
-                Simply Unique/<br>Simply Better.
+                Simply Unique<span style="color: grey;">/</span>
+                <br>
+                Simply Better<span style="color: grey;">.</span>
             </div>
             <div class="slider_text2">
                 <b style="color: black;">3legant</b> is a gift and decorations store based in HCMC, <br> Vietnam. Estd
@@ -79,6 +102,8 @@
         </div>
     </div>
 
+
+    <!-- HTML for banner grid section -->
 
     <div class="banner_grid">
         <div class="banner_col1 , living_room" style="background-color: rgb(224, 224, 229);">
@@ -136,10 +161,12 @@
     </div>
 
 
+    <!-- HTML for carousel section -->
+
     <div class="product_carousel">
-        <div class="new_text">
+        <div class="arrivals_header">
             <div style="font-size: 30px;"><b>New<br>Arrivals</b></div>
-            <div class="new_more">
+            <div class="Arrivals_moreLink">
                 <a style="color:black;" href="#">More Products</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
                     viewBox="0 0 16 16" style="padding-left: 3px;">
@@ -149,195 +176,204 @@
             </div>
         </div>
 
-        <div class="new_full_image">
-            <div class="new_each_image">
-                <div class="new_image_txt">
-                    <button class="new_btn">NEW</button>
-                    <button class="off_btn">-50%</button>
+        <div class="arrivals_image_section">
+            <div class="product_section">
+                <div class="product_buttons">
+                    <button class="button_NEW">NEW</button>
+                    <button class="button_OFF">-50%</button>
                 </div>
-                <img src="./images/new1.jpeg" alt="Loveseat sofa" width="300px" height="200px">
-                <div class="new_below">
+                <img class="product_image" src="./images/new1.jpeg" alt="Loveseat sofa">
+                <div class="product_details">
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
                                 d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                         </svg>
                     </div>
-                    <div>Loveseat Sofa</div>
-                    <div>$199.00</div>
+                    <div style="font-size: 15px;">Loveseat Sofa</div>
+                    <div style="font-size: 13px;">$199.00 <span
+                            style="text-decoration: line-through; color: rgb(115, 195, 115);"> $400.00</span>
+                    </div>
                 </div>
             </div>
-            <div class="new_each_image">
-                <div class="new_image_txt">
-                    <button class="new_btn">NEW</button>
-                    <button class="off_btn">-50%</button>
+            <div class="product_section">
+                <div class="product_buttons">
+                    <button class="button_NEW">NEW</button>
+                    <button class="button_OFF">-50%</button>
                 </div>
-                <img src="./images/new2.jpeg" alt="Table Lamp" width="300px" height="200px">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <div>Loveseat Sofa</div>
-                    <div>$199.00</div>
-                </div>
-            </div>
-            <div class="new_each_image">
-                <div class="new_image_txt">
-                    <button class="new_btn">NEW</button>
-                    <button class="off_btn">-50%</button>
-                </div>
-                <img src="./images/new3.jpeg" alt="Beige Table Lamp" width="300px" height="200px">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <div>Loveseat Sofa</div>
-                    <div>$199.00</div>
+                <img class="product_image" src="./images/new2.jpeg" alt="Table Lamp">
+                <div class="product_details">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <div style="font-size: 15px;">Table Lamp</div>
+                    <div style="font-size: 13px;">$24.99</div>
                 </div>
             </div>
-            <div class="new_each_image">
-                <div class="new_image_txt">
-                    <button class="new_btn">NEW</button>
-                    <button class="off_btn">-50%</button>
+            <div class="product_section">
+                <div class="product_buttons">
+                    <button class="button_NEW">NEW</button>
+                    <button class="button_OFF">-50%</button>
                 </div>
-                <img src="./images/new4.jpeg" alt="Bamboo Basket" width="300px" height="200px">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <div>Loveseat Sofa</div>
-                    <div>$199.00</div>
+                <img class="product_image" src="./images/new3.jpeg" alt="Beige Table Lamp">
+                <div class="product_details">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <div style="font-size: 15px;">Beige Table Lamp</div>
+                    <div style="font-size: 13px;">$24.99</div>
                 </div>
             </div>
-            <div class="new_each_image">
-                <div class="new_image_txt">
-                    <button class="new_btn">NEW</button>
-                    <button class="off_btn">-50%</button>
+            <div class="product_section">
+                <div class="product_buttons">
+                    <button class="button_NEW">NEW</button>
+                    <button class="button_OFF">-50%</button>
                 </div>
-                <img src="./images/new5.jpeg" alt="Toaster" width="300px" height="200px">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                    </svg>
-                    <div>Loveseat Sofa</div>
-                    <div>$199.00</div>
+                <img class="product_image" src="./images/new4.jpeg" alt="Bamboo Basket">
+                <div class="product_details">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <div style="font-size: 15px;">Bamboo Basket</div>
+                    <div style="font-size: 13px;">$24.99</div>
+                </div>
+            </div>
+            <div class="product_section">
+                <div class="product_buttons">
+                    <button class="button_NEW">NEW</button>
+                    <button class="button_OFF">-50%</button>
+                </div>
+                <img class="product_image" src="./images/new5.jpeg" alt="Toaster">
+                <div class="product_details">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                    <div style="font-size: 15px;">Toaster</div>
+                    <div style="font-size: 13px;">$224.99</div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
 
-
+    <!-- HTML for values section -->
 
     <div class="value_section">
         <div class="values">
@@ -346,9 +382,9 @@
                 <path
                     d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
             </svg>
-            <div class="value_text">
-                <p class="value_t1">Free Shipping</p>
-                <p class="value_t2">Order above $200</p>
+            <div class="value_details">
+                <p class="value_name">Free Shipping</p>
+                <p class="value_subtext">Order above $200</p>
             </div>
         </div>
 
@@ -358,9 +394,9 @@
                 <path
                     d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1" />
             </svg>
-            <div class="value_text">
-                <p class="value_t1">Money-back</p>
-                <p class="value_t2">30 days guarentee</p>
+            <div class="value_details">
+                <p class="value_name">Money-back</p>
+                <p class="value_subtext">30 days guarentee</p>
             </div>
         </div>
 
@@ -370,9 +406,9 @@
                 <path
                     d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
             </svg>
-            <div class="value_text">
-                <p class="value_t1">Secure Payments</p>
-                <p class="value_t2">Secured by Stripe</p>
+            <div class="value_details">
+                <p class="value_name">Secure Payments</p>
+                <p class="value_subtext">Secured by Stripe</p>
             </div>
         </div>
 
@@ -382,25 +418,27 @@
                 <path
                     d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
             </svg>
-            <div class="value_text">
-                <p class="value_t1">24/7 Support</p>
-                <p class="value_t2">Phone and Email support</p>
+            <div class="value_details">
+                <p class="value_name">24/7 Support</p>
+                <p class="value_subtext">Phone and Email support</p>
             </div>
         </div>
     </div>
 
 
 
-    <div class="banner2">
-        <div class="banner2_img">
-            <img src="./images/banner.jpeg" alt="Banner Image" width="600px" height="450px">
+    <!-- HTML for banner section -->
+
+    <div class="banner" style="height: 470px;">
+        <div class="banner_image">
+            <img src="./images/banner.jpeg" alt="Banner Image" width="600px" height="470px">
         </div>
-        <div class="banner2_text">
-            <p class="banner2_text1">SALE UP TO 35% OFF</p>
-            <p class="banner2_text2">HUNDREDS of <br>New lower prices!</p>
-            <p class="banner2_text3">It's more affordable than ever to give every room <br> in your home a stylish
+        <div class="banner_details">
+            <p class="banner_text1">SALE UP TO 35% OFF</p>
+            <p class="banner_text2">HUNDREDS of <br>New lower prices!</p>
+            <p class="banner_text3">It's more affordable than ever to give every room <br> in your home a stylish
                 makeover</p>
-            <div class="banner2_shop">
+            <div class="banner_shop_link">
                 <a href="#"> Shop Now</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
                     viewBox="0 0 16 16" style="padding-left: 3px;">
@@ -412,10 +450,12 @@
     </div>
 
 
+    <!-- HTML for blog section -->
+
     <div class="blog_section">
-        <div class="blog_text">
-            <div class="blog_text1">Articles</div>
-            <div class="blog_text2">
+        <div class="blog_header">
+            <div class="blog_name">Articles</div>
+            <div class="blog_link">
                 <a href="#">More Articles</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-arrow-right"
                     viewBox="0 0 16 16" style="padding-left: 3px;">
@@ -426,10 +466,10 @@
         </div>
 
         <div class="blog_articles">
-            <div class=" articles">
+            <div class=" article">
                 <img src="./images/article1.jpeg" alt="article1" width="340px" height="300px">
-                <div class="article_text">
-                    <p class="articleP">7 ways to decor your home</p>
+                <div class="article_description">
+                    <p style="font-size: 18px;">7 ways to decor your home</p>
                     <div class="article_link">
                         <a style="color: black; font-size: 13px;" href="#">Read More</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
@@ -440,10 +480,10 @@
                     </div>
                 </div>
             </div>
-            <div class=" articles">
+            <div class=" article">
                 <img src="./images/article2.jpeg" alt="article2" width="340px" height="300px">
-                <div class="article_text">
-                    <p class="articleP">Kitchen organization</p>
+                <div class="article_description">
+                    <p style="font-size: 18px;">Kitchen organization</p>
                     <div class="article_link">
                         <a style="color: black; font-size: 13px;" href="#">Read More</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
@@ -454,10 +494,10 @@
                     </div>
                 </div>
             </div>
-            <div class="articles">
+            <div class="article">
                 <img src="./images/article3.jpeg" alt="article3" width="340px" height="300px">
-                <div class="article_text">
-                    <p class="articleP">Decor your bedroom</p>
+                <div class="article_description">
+                    <p style="font-size: 18px;">Decor your bedroom</p>
                     <div class="article_link">
                         <a style="color: black; font-size: 13px;" href="#">Read More</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black"
@@ -471,13 +511,16 @@
         </div>
     </div>
 
+
+    <!-- HTML for newsletter section -->
+
     <div class="newsletter_Section">
-        <div class="news_Image">
+        <div class="newsletter_image">
             <img src="./images/news_table.jpeg" alt="Table Image" width="300px" height="300px">
         </div>
-        <div class="news_Text">
-            <p class="news_Text1">Join Our Newsletter</p>
-            <p class="news_Text2">Sign up for deals, new products and promotions</p>
+        <div class="newsletter_text">
+            <p class="newsletter_message">Join Our Newsletter</p>
+            <p class="newsletter_subtext">Sign up for deals, new products and promotions</p>
             <div class="email">
                 <div class="email_div">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-envelope"
@@ -485,29 +528,30 @@
                         <path
                             d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                     </svg>
-                    <p class="news_email_text">Email Address</p>
+                    <p class="email_address">Email Address</p>
                 </div>
                 <!-- <input type="text" id="email" name="email" "> -->
                 <a style="color: gray; font-size: 13px;" href="#">Sign up</a>
             </div>
             <hr style="width:120%; margin:0%; margin-top:10px; color:grey">
         </div>
-        <div class="news_Image">
+        <div class="newsletter_image">
             <img src="./images/newsSofa.jpeg" alt="sofa Image" width="300px" height="300px">
         </div>
     </div>
 
 
+    <!-- HTML for footer -->
 
     <div class="footer">
         <div style="padding: 0 5rem 0 5rem;">
-            <div class="f1">
-                <div class="f11">
+            <div class="footer_details_and_links">
+                <div class="footer_details">
                     <div style="font-size: 20px;">3legant.</div>
                     <div style="font-size: 20px;">|</div>
                     <div>Gift & Decoration Store</div>
                 </div>
-                <div class="f12">
+                <div class="footer_links">
                     <div>Home</div>
                     <div>Shop</div>
                     <div>Product</div>
@@ -518,8 +562,8 @@
 
             <hr style="width:100%;color:grey">
 
-            <div class="f2">
-                <div class="f21">
+            <div class="footer_copyright_and_social">
+                <div class="footer_copyright">
                     <div>Copyright
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor"
                             class="bi bi-c-circle" viewBox="0 0 16 16">
@@ -531,7 +575,7 @@
                     <div> <b>Privacy Policy</b> </div>
                     <div> <b>Terms of Use</b> </div>
                 </div>
-                <div class="f22">
+                <div class="footer_social">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">

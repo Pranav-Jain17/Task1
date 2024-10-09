@@ -5,13 +5,20 @@ body {
 }
 
 /* CSS for Notification bar */
+
 .notification_bar {
     background-color: rgb(210, 216, 221);
-    padding: 5px 5rem 5px 5rem;
+    padding: 5px 1rem 5px 1rem;
     font-size: 14px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.notification_text {
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 .notify_shop {
@@ -20,8 +27,10 @@ body {
 }
 
 
+
 /* CSS for Navigation bar */
-.nav_logo {
+
+.navbar_logo {
     font-size: 20px;
 }
 
@@ -33,7 +42,7 @@ body {
     padding: 10px 5rem 10px 5rem;
 }
 
-.nav_container a {
+.navbar_container a {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 14px;
@@ -44,22 +53,28 @@ a:hover {
     text-decoration: underline;
 }
 
-.nav_icons {
+.navbar_icons {
     text-align: end;
 }
 
-.nav_icons svg {
+.navbar_icons svg {
     padding: 3px;
 }
 
 
+
+
 /* CSS for Slider Section */
-.slider {
+
+.slider_section {
     padding: 0px 5rem 0px 5rem;
+    position: relative;
 }
 
-#slider_img {
+.slider_img {
     width: 100%;
+    height: 500px;
+    display: inline-block;
 }
 
 .slider_text {
@@ -79,6 +94,8 @@ a:hover {
     color: rgb(152, 151, 151);
     padding-right: 5rem;
 }
+
+
 
 
 /* CSS for banner grid */
@@ -123,11 +140,11 @@ a:hover {
 
 .banner_title {
     font-size: 25px;
+    padding-bottom: 15px;
     margin: 0%;
 }
 
 .banner_shop {
-    padding-top: 20px;
     color: black;
 }
 
@@ -144,7 +161,10 @@ a:hover {
 }
 
 
+
+
 /* CSS for product carousel */
+
 .product_carousel {
     padding: 30px 5rem 0px 5rem;
     display: flex;
@@ -152,21 +172,22 @@ a:hover {
     margin-bottom: 10px;
 }
 
-.new_text {
+.arrivals_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
 
-.new_full_image {
-    padding-top: 20px;
+.arrivals_image_section {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     overflow-x: auto;
+    background-color: rgb(166, 143, 143);
 }
 
-.new_each_image {
+.product_section {
     padding-top: 10px;
     background-color: rgb(224, 224, 229);
     display: flex;
@@ -174,37 +195,54 @@ a:hover {
     gap: 5px;
 }
 
-.new_image_txt {
+.product_buttons {
     display: flex;
     flex-direction: column;
     gap: 2px;
     padding-left: 10px;
 }
 
-.new_btn {
+.product_image {
+    width: 280px;
+    height: 230px;
+}
+
+.button_NEW {
     background-color: beige;
     width: fit-content;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
     border-color: white;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 }
 
-.off_btn {
+.button_OFF {
     background-color: rgb(207, 207, 162);
     width: fit-content;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
     border-color: white;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
 }
 
-.new_below {
+.product_details {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    padding-bottom: 15px;
 }
 
 
+
 /* CSS for values-section */
+
 .value_section {
     padding: 20px 5rem 0px 5rem;
     display: flex;
@@ -222,21 +260,23 @@ a:hover {
     padding-top: 20px;
 }
 
-.value_t2 {
+.value_subtext {
     color: rgb(142, 142, 142);
     font-size: 13px;
 }
 
 
 
+
 /* CSS for banner-section */
-.banner2 {
+
+.banner {
     padding-top: 20px;
     display: flex;
     width: 100%;
 }
 
-.banner2_text {
+.banner_details {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -245,26 +285,26 @@ a:hover {
     padding-left: 5rem;
 }
 
-.banner2_text1 {
+.banner_text1 {
     color: blue;
     font-size: 13px;
     margin: 0;
     padding-top: 10px;
 }
 
-.banner2_text2 {
+.banner_text2 {
     font-size: 30px;
     margin: 0;
     padding-top: 10px;
 }
 
-.banner2_text3 {
+.banner_text3 {
     font-size: 13px;
     margin: 0;
     padding-top: 10px;
 }
 
-.banner2_shop {
+.banner_shop_link {
     padding-top: 20px;
     display: flex;
     color: black;
@@ -273,20 +313,21 @@ a:hover {
 
 
 /* CSS for blog-section */
+
 .blog_section {
     padding: 50px 5rem 0px 5rem;
 }
 
-.blog_text {
+.blog_header {
     display: flex;
     justify-content: space-between;
 }
 
-.blog_text1 {
+.blog_name {
     font-size: 30px;
 }
 
-.blog_text2 {
+.blog_link {
     font-size: 15px;
 }
 
@@ -294,10 +335,6 @@ a:hover {
     padding-top: 30px;
     display: flex;
     gap: 20px;
-}
-
-.articlesP {
-    font-size: 20px;
 }
 
 .article_link {
@@ -315,21 +352,21 @@ a:hover {
     background-color: rgb(224, 224, 229);
 }
 
-.news_Text {
+.newsletter_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.news_Text1 {
+.newsletter_message {
     margin: 0px;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Lucida Sans';
 }
 
-.news_Text2 {
+.newsletter_subtext {
     margin: 0px;
     padding-top: 5px;
     font-size: 14px;
@@ -344,7 +381,7 @@ a:hover {
     align-items: center;
 }
 
-.news_email_text {
+.email_address {
     font-size: 13px;
 }
 
@@ -368,36 +405,36 @@ a:hover {
     font-size: 10px;
 }
 
-.f1 {
+.footer_details_and_links {
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
 }
 
-.f2 {
+.footer_copyright_and_social {
     display: flex;
     justify-content: space-between;
     padding: 11px 0 50px 0;
 }
 
-.f11 {
+.footer_details {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.f12 {
+.footer_links {
     display: flex;
     gap: 20px;
 }
 
-.f21 {
+.footer_copyright {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.f22 {
+.footer_social {
     display: flex;
     gap: 20px;
 }
